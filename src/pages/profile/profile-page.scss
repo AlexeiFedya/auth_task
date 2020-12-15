@@ -1,0 +1,14 @@
+.profile-page-wrap {
+    display: flex;
+    overflow: hidden;
+    height: calc(100vh - 56px);
+}
+
+.profile-page {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}

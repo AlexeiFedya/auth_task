@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.header__button {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: $p-font-size-mobile;
+    background-color: white;
+    font-weight: 400;
+    transition: 1.5s;
+    opacity: 1;
+
+    &:hover {
+        transition: 1.5s;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    a {
+        color: black;
+    }
+}
+
+
+@media (min-width: $desktop-width) {
+    .header__button {
+        font-size: $p-font-size-very-large;
+    }
+}
