@@ -11,7 +11,7 @@ export const Header = ({isAuthenticated}) => {
 
     const logoutHandler = async () => {
         try{
-            const data = await request('/tager/user/profile/logout', 'POST', null, {Authorization: `Bearer ${auth.token}`});
+            const data = await request('https://tager.dev.ozitag.com/api/tager/user/profile/logout', 'POST', null, {Authorization: `Bearer ${auth.token}`});
             auth.logout(data.success)
         }catch(e){}
     }

@@ -45,7 +45,7 @@ export const Login = () => {
                     onSubmit={async (values) => {
                         try{
                             const {email, password} = values
-                            const data = await request('/auth/user', 'POST', {email, password, clientId: 1});
+                            const data = await request('https://tager.dev.ozitag.com/api/auth/user', 'POST', {email, password, clientId: 1});
                             // console.log(data.data.accessToken)
                             auth.login(data.data.accessToken)
                         }catch(e){}

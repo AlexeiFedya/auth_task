@@ -17,7 +17,7 @@ export const Profile = () => {
 
     const getProfile = useCallback(async () => {
         try {
-            const data = await request('/tager/user/profile', 'GET', null, {
+            const data = await request('https://tager.dev.ozitag.com/api/tager/user/profile', 'GET', null, {
                 Authorization: `Bearer ${token}`
             })
             setProfile(data.data)
