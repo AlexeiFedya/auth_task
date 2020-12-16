@@ -6,7 +6,7 @@ import App from './components/app/App';
 
 
 ReactDOM.render(
-  <Router>
+  <Router basename="/auth_task">
     <App />
   </Router>,
   document.getElementById('root')
